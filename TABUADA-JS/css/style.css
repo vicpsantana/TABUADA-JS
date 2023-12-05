@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+body {
+    text-align: center;
+    padding: 2rem; /*Espaçamento nos cantos da borda*/
+    min-height: 100vh;
+    background: linear-gradient(180deg, #020333 0%, #998ae4 98%);
+    color: #fff;
+}
+
+h2 {
+    margin-bottom: 1rem; /*Distancia entre eles*/
+}
+
+#multiplication-form {
+    display: flex; /*Itens um do lado do outro*/
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /*Quebre a linha se o elemento passar*/
+    max-width: 300px;
+    margin: 1rem auto; /*A div vai ser centralizada por meio dessa margem e limitar a largura dela com 300px*/
+    padding: 1rem; /*Espaçamento interno dos elementos*/
+    background-color: #fff;
+    border-radius: 1rem; /*Arredondar a borda*/
+    color: #333;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    margin: 0 1rem;
+}
+
+.form-control label {
+    margin-bottom: 0.6rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.form-control input {
+    margin-bottom: 1rem;
+    flex: 1; /*Preencher o max de largura possível dentro da largura pai*/
+    padding: 0.6rem 0.4rem; /*Enchimento interno do botão*/
+    border: 1px solid #333;
+    width: 50px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#multiplication-form input[type="submit"] {
+ max-height: 50px;   
+ padding: 0.6rem 1.2rem; /*Enchimento do botão*/
+ width: 200px; /*Largura do botão*/
+ color: #fff;
+ background-color: #333;
+ border: 1px solid #333;
+ border-radius: 5px;
+ cursor: pointer;
+ font-weight: bold; /*Negrito*/
+}
+
+#multiplication-form input[type="submit"]:hover {
+    background-color: rgb(136, 96, 174);
+}
+
+#multiplication-operations {
+    display: flex;
+    flex-direction: column; /*Direção de coluna, deixando um item embaixo do outro*/
+    align-items: center;
+    max-width: 300px;
+    margin: 1rem auto; /*Margem automática nas laterais e centraliza os elementos*/
+    padding: 2rem 1rem;
+    background-color: #fff;
+    color: #333;
+    border-radius: 1rem;
+}
+
+#multiplication-operations .row {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ccc; /*Borda em volta das operações*/
+    border-bottom: none; 
+}
+
+#multiplication-operations .row {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ccc; /*Borda em volta das operações*/
+    border-bottom: none; /*Tirando a duplicidade da borda*/
+    padding: 0.5rem;
+    width: 150px;
+}
+
+#multiplication-operations .row:last-child {
+    border-bottom: 1px solid #ccc;
+}
+
+#multiplication-operations .result {
+    margin-left: 0.4rem;
+}
